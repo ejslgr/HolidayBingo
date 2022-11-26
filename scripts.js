@@ -1,41 +1,41 @@
 //array of possible card contents
 const entryArray = [
     "Free Space: people falling in love",
-    "\"You'll always have them in here\" [points to heart]",
+    "\"You'll always have them in here\" (points to heart)",
     "Benefit for the poor and/or orphans",
-    "A kid figuring out the truth first",
-    "A woman putting her career before love", 
-    "A notoriously stern person getting into the holiday spirit", 
+    "Kid figures out the truth first",
+    "Dog figures out the truth first",
+    "Woman puts her career before love", 
+    "Notoriously stern person gets into the holiday spirit", 
     "Mention of another movie in the Holiday-verse",
     "Dead parent(s)", 
     "\"Stop!\" / \"Wait!\" / \"Don't!\"",
     "Impending financial or political disaster",
-    "A Christmas Day/Eve deadline",
-    "A mysterious wise man (maybe Santa, maybe an angel)",
-    "Dad figure saying \"I always thought you two would end up together\"",
+    "Christmas Day/Eve deadline",
+    "Mysterious wise man (maybe Santa, maybe an angel)",
+    "Father-figure says \"I always thought you two would end up together\"",
     "\"One year later\"",
     "Black policeman or security figure",
     "Exaggerated ineptitude", 
     "Children worried about Santa", 
-    "One of the leads being 'an artist'",
-    "An interrupted kiss", 
-    "A conflict turns into romantic repartee", 
-    "A family member privately shares a lead's tragic or misunderstood backstory", 
-    "Man naming honesty as an attractive quality in a woman who is lying to him", 
-    "Nosy mother figure", 
-    "Someone making a wish that they have to keep secret", 
-    "The town mayor", 
+    "One of the leads is 'an artist'",
+    "Interrupted kiss", 
+    "Conflict turns into romantic repartee", 
+    "Family member privately shares a lead's tragic or misunderstood backstory", 
+    "Love interest names honesty as an attractive quality to a person who is lying to them", 
+    "Meddling mother-figure", 
+    "Someone makes a wish that they have to keep secret", 
+    "Town mayor", 
     "Memory montage", 
     "Effeminate man as comic relief",
-    "Traditional family holiday drink absolutely slaps",
-    "Child asking an overly obvious question for the sake of exposition",
-    "An animal figuring out the truth first",
-    "People pretending to be in a relationship when they aren't (yet)",
-    "Someone having to work on the holiday",
-    "A holiday-themed competition",
+    "Traditional holiday drink absolutely slaps",
+    "Child asks an overly obvious question for the sake of exposition",
+    "People pretend to be in a relationship when they aren't (yet)",
+    "Someone has to work on the holiday",
+    "Holiday-themed competition",
     "Musical number or caroling scene",
-    "Running into a high school ex",
-    ""
+    "Running into an old flame",
+    "Cozy country inn",
 ]
 
 //function that turns bingo squares red (and back) when clicked
@@ -43,11 +43,11 @@ const card = document.getElementById("card");
 card.onclick = function turnRed(e){
     let targetDiv = e.target; 
     let bColor = window.getComputedStyle(targetDiv).backgroundColor;
-    if (bColor === 'rgb(240, 248, 255)'){
-        e.target.style.backgroundColor = 'red'
+    if (bColor === 'rgb(231, 248, 248)'){
+        e.target.style.backgroundColor = '#54CFCF';
     }
-    else if (e.target.style.backgroundColor === 'red'){
-        e.target.style.background = 'aliceblue'
+    else if (e.target.style.backgroundColor === 'rgb(84, 207, 207)'){
+        e.target.style.background = '#E7F8F8'
     }
 }
 
@@ -69,10 +69,11 @@ const loadCard = function generateCard(){
     shuffle(copiedArray);
     entries = copiedArray;
     child.innerHTML = entries[0];
-    child.style.backgroundColor = "aliceblue";
+    child.style.backgroundColor = "#E7F8F8";
     var freeSpace = document.getElementById("freeSpace");
         freeSpace.innerHTML = entryArray[0];
-        freeSpace.style.backgroundColor = "red"
+        freeSpace.style.backgroundColor = "#C30F16";
+        freeSpace.style.color="#ffebcd"
     }  
 }
 const btn = document.getElementById("genCard");

@@ -1,29 +1,65 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-   
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #C30F16; 
+}
+
+h1 {
+  font-size: 6em;
+  line-height: .25em;
+}
+
+h2 {
+font-size: 3em;
+line-height: .25em;
+}
+
+button {
+  background-color: #088383; 
+  border-width: 2px; 
+  border-style: solid; 
+  border-color: #ffebcd;
+  border-radius: 8px;
+  color: #ffebcd;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.grid-container-header {
+  background-color: #C30F16;
+  padding: 1px;
+  color: #ffebcd;
+  font-family: 'Mountains of Christmas', cursive;
+  text-align: center;
+  border: 5px;
+  border-style: solid solid hidden solid;
+  border-color: #ffebcd;
+
+
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    background-color: #2196F3;
+    background-color: #C30F16;
     padding: 10px;
+    border: 5px;
+    border-style: hidden solid solid solid;
+    border-color: #ffebcd;
   }
 
   .grid-item {
-    background-color:aliceblue; 
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #E7F8F8; 
+    border: 2px solid #C30F16;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
-    align-items: center;
-    justify-items: center;
+    /* place-self: center; */
   }
 
-  .grid-item-header {
+  /* .grid-item-header {
     background-color: #2196F3;
     color:#ffebcd;
-    padding: 20px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
     font-size: 3.2em;
     font-family: Arial, Arial, Helvetica, sans-serif;
     text-align: center;
-  }
+  } */
