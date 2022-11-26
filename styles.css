@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color:aliceblue; 
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grid-item-header {
+    background-color: #2196F3;
+    color:#ffebcd;
+    padding: 20px 5px 5px 5px;
+    font-size: 3.2em;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
