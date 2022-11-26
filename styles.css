@@ -22,7 +22,7 @@ button {
   color: #ffebcd;
   padding: 10px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .grid-container-header {
@@ -51,7 +51,7 @@ button {
     background-color: #E7F8F8; 
     border: 2px solid #C30F16;
     padding: 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
   }
 
