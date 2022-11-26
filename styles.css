@@ -1,6 +1,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #C30F16; 
+  font-size: 1.5em;
 }
 
 h1 {
@@ -52,14 +53,5 @@ button {
     padding: 10px;
     font-size: 1em;
     text-align: center;
-    /* place-self: center; */
   }
 
-  /* .grid-item-header {
-    background-color: #2196F3;
-    color:#ffebcd;
-    padding: 5px 5px 5px 5px;
-    font-size: 3.2em;
-    font-family: Arial, Arial, Helvetica, sans-serif;
-    text-align: center;
-  } */
