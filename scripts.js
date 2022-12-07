@@ -1,33 +1,29 @@
 //array of possible card contents
 const entryArray = [
     "Free Space: people falling in love",
-    "\"You'll always have them in here\" (points to heart)",
     "Benefit for the poor and/or orphans",
     "Kid figures out the truth first",
     "Dog figures out the truth first",
-    "Woman puts her career before love", 
-    "Notoriously stern person gets into the holiday spirit", 
+    "Woman puts her career before love",
+    "Notoriously stern person gets into the holiday spirit",
     "Mention of another movie in the Holiday-verse",
-    "Dead parent(s)", 
-    "\"Stop!\" / \"Wait!\" / \"Don't!\"",
+    "Dead parent(s)",
+    "One lead begs the other not to leave",
     "Impending financial or political disaster",
     "Christmas Day/Eve deadline",
     "Mysterious wise man (maybe Santa, maybe an angel)",
-    "Father-figure says \"I always thought you two would end up together\"",
     "\"One year later\"",
     "Black policeman or security figure",
-    "Exaggerated ineptitude", 
-    "Children worried about Santa", 
+    "Exaggerated ineptitude",
+    "Children worried about Santa",
     "One of the leads is 'an artist'",
-    "Interrupted kiss", 
-    "Conflict turns into romantic repartee", 
-    "Family member privately shares a lead's tragic or misunderstood backstory", 
-    "Love interest names honesty as an attractive quality to a person who is lying to them", 
-    "Meddling mother-figure", 
-    "Someone makes a wish that they have to keep secret", 
-    "Town mayor", 
-    "Memory montage", 
-    "Effeminate man as comic relief",
+    "Interrupted kiss",
+    "Conflict turns into romantic repartee",
+    "Family member privately shares a lead's tragic or misunderstood backstory",
+    "Meddling mother-figure",
+    "Someone makes a wish that they have to keep secret",
+    "The town mayor (or the HOA president)",
+    "Memory montage or series of flashbacks",
     "Traditional holiday drink absolutely slaps",
     "Child asks an overly obvious question for the sake of exposition",
     "People pretend to be in a relationship when they aren't (yet)",
@@ -36,12 +32,16 @@ const entryArray = [
     "Musical number or caroling scene",
     "Running into an old flame",
     "Cozy country inn",
+    "Someone returning home",
+    "Quaint small town",
+    "Christmas light fiasco",
+    
 ]
 
 //function that turns bingo squares red (and back) when clicked
 const card = document.getElementById("card");
 card.onclick = function turnRed(e){
-    let targetDiv = e.target; 
+    let targetDiv = e.target;
     let bColor = window.getComputedStyle(targetDiv).backgroundColor;
     if (bColor === 'rgb(231, 248, 248)'){
         e.target.style.backgroundColor = '#54CFCF';
@@ -64,7 +64,7 @@ const loadCard = function generateCard(){
                 arr[j] = arr[k];
                 arr[k] = temp;
             }
-        }     
+        }
     var copiedArray = entries.slice(1);
     shuffle(copiedArray);
     entries = copiedArray;
@@ -74,7 +74,7 @@ const loadCard = function generateCard(){
         freeSpace.innerHTML = entryArray[0];
         freeSpace.style.backgroundColor = "#C30F16";
         freeSpace.style.color="#ffebcd"
-    }  
+    }
 }
 const btn = document.getElementById("genCard");
 btn.onclick = loadCard;
