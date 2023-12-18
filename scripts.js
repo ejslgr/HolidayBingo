@@ -2,9 +2,8 @@
 const entryArray = [
     "Free Space: people falling in love",
     "Benefit for the poor and/or orphans",
-    "Kid figures out the truth first",
-    "Dog figures out the truth first",
-    "Woman puts her career before love",
+    "A child or a dog figures out the truth first",
+    "A lead puts their career before love",
     "Notoriously stern person gets into the holiday spirit",
     "Mention of another movie in the Holiday-verse",
     "Dead parent(s)",
@@ -13,8 +12,7 @@ const entryArray = [
     "Christmas Day/Eve deadline",
     "Mysterious wise man (maybe Santa, maybe an angel)",
     "\"One year later\"",
-    "Black policeman or security figure",
-    "Exaggerated ineptitude",
+    "Exaggerated ineptitude, maybe involving a Christmas tree",
     "Children worried about Santa",
     "One of the leads is 'an artist'",
     "Interrupted kiss",
@@ -23,7 +21,7 @@ const entryArray = [
     "Meddling mother-figure",
     "Someone makes a wish that they have to keep secret",
     "The town mayor (or the HOA president)",
-    "Memory montage or series of flashbacks",
+    "A montage or a series of flashbacks to remind us of ~time passing~",
     "Traditional holiday drink absolutely slaps",
     "Child asks an overly obvious question for the sake of exposition",
     "People pretend to be in a relationship when they aren't (yet)",
@@ -35,7 +33,9 @@ const entryArray = [
     "Someone returning home",
     "Quaint small town",
     "Christmas light fiasco",
-    
+    "Someone \"not ready to date again\" is lonely at Christmas",
+    "Unseasonal foliage, covered in snow",
+
 ]
 
 //function that turns bingo squares red (and back) when clicked
